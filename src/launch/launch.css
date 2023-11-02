@@ -1,0 +1,19 @@
+#launch {
+  max-width: 30em;
+  margin: auto;
+}
+@media screen and (max-width: 30rem) {
+  #launch {
+    padding: 0 1rem;
+  }
+}
+.actions {
+  margin: 2.5rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.actions button {
+  margin: 0;
+  flex: 0 1 calc(50% - 0.25rem);
+}

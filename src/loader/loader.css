@@ -1,0 +1,66 @@
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(25, 25, 25, 0.9);
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+.loader-logo {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.1);
+  animation: 3s infinite linear glow;
+}
+.spinner {
+  z-index: 1;
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  border: 0.25rem solid rgba(255, 255, 255, 0.1);
+  border-top: 0.25rem solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.1);
+  animation: 3s infinite linear spin;
+}
+
+@keyframes glow {
+  from {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.4);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

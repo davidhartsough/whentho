@@ -1,0 +1,16 @@
+#home {
+  margin: 0 auto;
+  max-width: 30rem;
+}
+#home .flex {
+  align-items: center;
+}
+#home .step {
+  flex: 1 1 30%;
+  color: var(--font);
+  margin: 0;
+}
+#home .arrow {
+  flex: 1 1 5%;
+  font-weight: 600;
+}
